@@ -3,7 +3,7 @@ import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req) {
-  let siteUrl = 'https://znaa.dk'
+  let siteUrl = 'https://zachaa.dk'
 
   if (!siteUrl) {
     throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
@@ -40,7 +40,7 @@ export async function GET(req) {
     let $ = cheerio.load(html)
 
     let publicUrl = `${siteUrl}/blog/${id}`
-    let article = $('article').first()
+    let article = $('blog').first()
     let title = article.find('h1').first().text()
     let date = article.find('time').first().attr('datetime')
     let content = article.find('[data-mdx-content]').first().html()
