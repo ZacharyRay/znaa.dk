@@ -1,0 +1,106 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import clsx from 'clsx'
+
+import { Container } from '@/components/Container'
+import {
+  InstagramIcon,
+  LinkedInIcon,
+} from '@/components/SocialIcons'
+import portraitImage from '@/images/photos/Zachonrobot.jpg'
+
+function SocialLink({ className, href, children, icon: Icon }) {
+  return (
+    <li className={clsx(className, 'flex')}>
+      <Link
+        href={href}
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+      >
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <span className="ml-4">{children}</span>
+      </Link>
+    </li>
+  )
+}
+
+function MailIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
+      />
+    </svg>
+  )
+}
+
+export const metadata = {
+  title: 'Om mig',
+  description:
+    'Jeg hedder Zachary, og er webudvikler fra Nyborg. Jeg er far, og så har jeg en masse andre interesser.',
+}
+
+export default function About() {
+  return (
+    <Container className="mt-16 sm:mt-32">
+      <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+        <div className="lg:pl-20">
+          <div className="max-w-xs px-2.5 lg:max-w-none">
+            <Image
+              src={portraitImage}
+              alt=""
+              sizes="(min-width: 1024px) 32rem, 20rem"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
+          </div>
+        </div>
+        <div className="lg:order-first lg:row-span-2">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          Om Mig: Zachary - Webudvikler, Musiker, Far og Mere
+
+          </h1>
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <p>
+            Hej, og velkommen til min side! Jeg hedder Zachary, en webudvikler fra og opvokset i Nyborg. Men jeg er mere end blot min profession; jeg er også en dedikeret far, en hygge-musiker, og en historienørd uden lige.
+            </p>
+            <p><strong>Min Professionelle Rejse</strong></p>
+            <p>
+            Til daglig arbejder jeg hos Mobile Industrial Robots i Odense. Her arbejder jeg som webudvikler og projektleder på diverse web-platforme. Noget jeg elsker og værdsætter! Derudover har jeg en række interesser, der spænder fra programmering til verdenshistorie, rumforskning og lasergravering. Det er denne nysgerrighed og bredde i interesser, der driver mig til altid at søge nye udfordringer og løsninger, både i mit arbejde og i livet generelt.
+            </p>
+            <p><strong>Min Mission</strong></p>
+            <p>
+            Min professionelle mission er simpel, men vigtig: at gøre den digitale verden mere tilgængelig, transparent og mindre forvirrende for virksomheder. Alt for mange gange har jeg set virksomheder falde i fælden af komplicerede webløsninger, dårlig service og endeløse SEO analyser, der ikke gør andet end at tømme bankkontoen. Jeg arbejder for at ændre det, en virksomhed ad gangen. Med mig får du transparens, ærlighed og en partner, der ønsker alle det bedste.
+            </p>
+            <p><strong>Mine Værdier</strong></p>
+            <p>
+            Passion: Hvad enten det er at kode den perfekte hjemmeside, spille en elektrificerende guitar solo eller tilbringe kvalitetstid med min familie, gør jeg det med hele mit hjerte.
+Nysgerrighed: Jeg tror på livslang læring. Verden er et fascinerende sted, fyldt med utallige muligheder for opdagelse.
+Integritet: For mig handler det om at gøre det rigtige, selv når ingen ser det. Det betyder at være ærlig, transparent og retfærdig i alle aspekter af livet.
+
+            </p>
+            <p><strong>Tak</strong></p>
+            <p>Tak fordi du stoppede forbi for at lære mig lidt bedre at kende. Lad os tage en snak om, hvad jeg kan hjælpe dig med.</p>
+          </div>
+        </div>
+        <div className="lg:pl-20">
+          <ul role="list">
+         
+            <SocialLink href="https://instagram.com/zacharyaagesen/" icon={InstagramIcon} className="mt-4">
+              Følg på Instagram
+            </SocialLink>
+            <SocialLink href="https://www.linkedin.com/in/zachary-aagesen-90329094/" icon={LinkedInIcon} className="mt-4">
+              Connect på LinkedIn
+            </SocialLink>
+            <SocialLink
+              href="mailto:zacharyaagesen@gmail.com"
+              icon={MailIcon}
+              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+            >
+              zacharyaagesen@gmail.com
+            </SocialLink>
+          </ul>
+        </div>
+      </div>
+    </Container>
+  )
+}
