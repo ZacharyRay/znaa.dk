@@ -44,7 +44,7 @@ export default async function ArticlesIndex() {
   return (
     <SimpleLayout
       title="Tanker fra en Webudvikler i Nyborg."
-      intro="Velkommen til min blog, hvor jeg deler indsigt i moderne webudvikling, tips til små virksomheder og refleksioner om livet i Nyborg. Her kan du finde ressourcer, der kan hjælpe dig med at forstå, hvordan den rigtige web-løsning kan gøre en forskel."
+      intro="Velkommen til min blog, hvor jeg deler indsigt i moderne webudvikling, tips til virksomheder og refleksioner om livet i Nyborg. Her kan du finde ressourcer, der kan hjælpe dig med at forstå, hvordan den rigtige web-løsning kan gøre en forskel."
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">
