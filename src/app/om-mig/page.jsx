@@ -56,30 +56,30 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Om Mig: Zachary - Webudvikler, Musiker, Far og Mere
+          Om Mig: Zachary - webudvikler, musiker og far
 
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Hej, og velkommen til min side! Jeg hedder Zachary, en webudvikler fra og opvokset i Nyborg. Men jeg er mere end blot min profession; jeg er også en dedikeret far, en hygge-musiker, og en historienørd uden lige.
+            Hej, og velkommen til min side! Jeg hedder Zachary. Min profession er webudvikler og så er jeg fra Nyborg, hvor jeg også er opvokset. Men jeg er lidt mere end det; jeg er også en dedikeret far, hygge-musiker, og historienørd!
             </p>
-            <p><strong>Min Professionelle Rejse</strong></p>
+            <p><strong>Min professionelle rejse</strong></p>
             <p>
-            Til daglig arbejder jeg hos Mobile Industrial Robots i Odense. Her arbejder jeg som webudvikler og projektleder på diverse web-platforme. Noget jeg elsker og værdsætter! Derudover har jeg en række interesser, der spænder fra programmering til verdenshistorie, rumforskning og lasergravering. Det er denne nysgerrighed og bredde i interesser, der driver mig til altid at søge nye udfordringer og løsninger, både i mit arbejde og i livet generelt.
+            Til daglig arbejder jeg hos Mobile Industrial Robots i Odense. Her arbejder jeg som webudvikler og projektleder på diverse web-platforme. Noget jeg virkelig elsker! Derudover har jeg en række interesser, der spænder fra programmering til verdenshistorie, rumforskning og lasergravering. Min nysgerrighed, driver mig til altid at søge nye udfordringer og løsninger, både i mit arbejde og i livet generelt.
             </p>
-            <p><strong>Min Mission</strong></p>
+            <p><strong>Min mission</strong></p>
             <p>
-            Min professionelle mission er simpel, men vigtig: at gøre den digitale verden mere tilgængelig, transparent og mindre forvirrende for virksomheder. Alt for mange gange har jeg set virksomheder falde i fælden af komplicerede webløsninger, dårlig service og endeløse SEO analyser, der ikke gør andet end at tømme bankkontoen. Jeg arbejder for at ændre det, en virksomhed ad gangen. Med mig får du transparens, ærlighed og en partner, der ønsker alle det bedste.
+            Min professionelle mission er at gøre den digitale verden mere tilgængelig, transparent og mindre forvirrende for virksomheder. Jeg har set mange virksomheder blive tilbudt over-komplicerede webløsninger, dårlig service og endeløse SEO analyser, der ikke gør andet end at tømme bankkontoen. Det kunne jeg godt tænke mig at ændre på. Jeg er altid meget transparens, bund ærlig ønsker altid alle det bedste.
             </p>
-            <p><strong>Mine Værdier</strong></p>
+            <p><strong>Mine værdier</strong></p>
             <p>
-            Passion: Hvad enten det er at kode den perfekte hjemmeside, spille en elektrificerende guitar solo eller tilbringe kvalitetstid med min familie, gør jeg det med hele mit hjerte.
-Nysgerrighed: Jeg tror på livslang læring. Verden er et fascinerende sted, fyldt med utallige muligheder for opdagelse.
+            Passion: Hvad enten det er at kode, synge i et rock band eller tilbringe med min familie, gør jeg det med hele mit hjerte!
+Nysgerrighed: Jeg tror på livslang læring. Verden er et fascinerende sted, fyldt med næsten alt for mange spændende ting at lære om.
 Integritet: For mig handler det om at gøre det rigtige, selv når ingen ser det. Det betyder at være ærlig, transparent og retfærdig i alle aspekter af livet.
 
             </p>
             <p><strong>Tak</strong></p>
-            <p>Tak fordi du stoppede forbi for at lære mig lidt bedre at kende. Lad os tage en snak om, hvad jeg kan hjælpe dig med.</p>
+            <p>Tak fordi du kiggede ind for at lære mig lidt bedre at kende. Lad os tage en snak om, hvad jeg kan hjælpe dig med.</p>
           </div>
         </div>
         <div className="lg:pl-20">
