@@ -255,7 +255,7 @@ export default async function Home() {
           I krydsfeltet mellem programering, musik og familie — sådan balancerer jeg livet.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Jeg hedder Zachary, og er webudvikler fra Nyborg. Jeg er far, og så har jeg en masse andre interesser. Til daglig arbejder jeg hos Mobile Industrial Robots i Odense og elsker det!
+            Jeg hedder Zachary, og er webudvikler fra Nyborg. Jeg er far, og så har jeg en masse andre interesser. Til daglig arbejder jeg hos Mobile Industrial Robots i Odense og elsker det! <strong>Ny hjemmeside? Giv mig et kald <a href='tel:+4522303339' style={{ textDecoration: 'underline' }}>22303339</a> eller send mig en mail: <a href='mailto:zacharyaagesen@gmail.com' style={{ textDecoration: 'underline' }}>zacharyaagesen@gmail.com</a> </strong>
           </p>
           <div className="mt-6 flex gap-6">
            
